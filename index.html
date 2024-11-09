@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Sulaiman AR</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header class="header">
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="home-section">
+      <div class="intro">
+        <div class="profile-img">
+          <img src="Jas Pafoto.png" alt="Profile Picture" />
+        </div>
+        <h1 class="title">
+          Hello, I'm <span class="highlight">Sulaiman AR</span>
+        </h1>
+        <p class="subtitle">
+          Berpengalaman dalam membangun aplikasi web dan mobile menggunakan
+          teknologi PHP, JavaScript, MySQL, dan CodeIgniter. Selalu bersemangat
+          untuk belajar dan mengembangkan diri.
+        </p>
+        <div class="cta-buttons">
+          <button class="btn primary-btn" onclick="downloadResume()">
+            <i class="fas fa-download"></i> Download CV
+          </button>
+        </div>
+        <div class="social-links">
+          <a
+            href="https://github.com/Arigta?tab=repositories"
+            class="social-link"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/sulaiman-ar-28217932b/" class="social-link"><i class="fab fa-linkedin"></i></a>
+          <a href="mailto:sulaimanar.098@gmail.com?subject=Pertanyaan&body=Halo Sulaiman," class="social-link">
+            <i class="fas fa-envelope"></i>
+        </a>
+        </div>
+        <div class="scroll-indicator">
+          <i class="fas fa-chevron-down"></i>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-container">
+        <div class="skill-card">
+          <div class="skill-icon"><i class="fab fa-php"></i></div>
+          <h3>PHP</h3>
+          <div class="skill-bar">
+            <div class="skill-progress" data-progress="85"></div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon"><i class="fab fa-html5"></i></div>
+          <h3>HTML & CSS</h3>
+          <div class="skill-bar">
+            <div class="skill-progress" data-progress="90"></div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon"><i class="fab fa-js"></i></div>
+          <h3>JavaScript</h3>
+          <div class="skill-bar">
+            <div class="skill-progress" data-progress="80"></div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon"><i class="fas fa-code"></i></div>
+          <h3>CodeIgniter 4</h3>
+          <div class="skill-bar">
+            <div class="skill-progress" data-progress="75"></div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon"><i class="fas fa-database"></i></div>
+          <h3>MySQL</h3>
+          <div class="skill-bar">
+            <div class="skill-progress" data-progress="85"></div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon"><i class="fas fa-cube"></i></div>
+          <h3>OOP Basics</h3>
+          <div class="skill-bar">
+            <div class="skill-progress" data-progress="70"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+      <h2 class="section-title">Projects</h2>
+      <div class="projects-container">
+        <div class="project-card">
+          <div class="project-img">
+            <img
+              src="SnapGallery.png"
+              onmouseover="this.src='SnapGallery.gif'"
+              onmouseout="this.src='SnapGallery.png'"
+            />
+          </div>
+          <div class="project-content">
+            <h3>Photo Gallery Website</h3>
+            <p>
+              Website Gallery is an interactive web project that allows users to
+              upload, organize, and share photo collections in albums, featuring
+              comments and likes to enhance user engagement.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">PHP</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">MySQL</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link" onclick='alert("Belum tersedia saat ini.");'
+                ><i class="fas fa-external-link-alt"></i> Live Demo</a>
+              <a
+                href="https://github.com/Arigta/tugasukk-gallery-foto"
+                class="project-link"
+                ><i class="fab fa-github"></i> Source Code</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-img">
+            <img    src="DigitalLibriary.png"
+            onmouseover="this.src='DigitalLibriary.gif'"
+            onmouseout="this.src='DigitalLibriary.png'" alt="Digital Library" />
+          </div>
+          <div class="project-content">
+            <h3>Digital Library Websitey</h3>
+            <p>
+              Developed a Digital Library with CodeIgniter 4, featuring
+              efficient management of books, members, borrowing, reviews, and
+              reports. Equipped with a modern design using Bootstrap 5 for an
+              optimized user experience.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">PHP</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">CodeIgniter 4</span>
+              <span class="tech-tag">MySQL</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link"onclick='alert("Belum tersedia saat ini.");'
+                ><i class="fas fa-external-link-alt"></i> Live Demo</a
+              >
+              <a href="#" class="project-link"
+                ><i class="fab fa-github"></i> Source Code</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <h2 class="section-title">Contact</h2>
+      <div class="contact-container">
+        <div class="contact-info">
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <p>sulaimanar.098@gmail.com</p>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <p>+62 852-6199-195</p>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <p>Jl. Klambir V Gg. Ubudiyah, Kota Medan.</p>
+          </div>
+        </div>
+        <form
+          action="https://formspree.io/f/YOUR_FORM_ID"
+          class="contact-form"
+          id="contactForm"
+        >
+          <div class="form-group">
+            <input type="text" placeholder="Your Name" required />
+          </div>
+          <div class="form-group">
+            <input type="email" placeholder="Your Email" required />
+          </div>
+          <div class="form-group">
+            <textarea placeholder="Your Message" required></textarea>
+          </div>
+          <button type="submit" class="btn primary-btn">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+        </form>
+      </div>
+    </section>
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
