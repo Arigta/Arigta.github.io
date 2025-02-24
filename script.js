@@ -44,19 +44,6 @@ const skillsObserver = new IntersectionObserver((entries) => {
 
 skillsObserver.observe(skillsSection);
 
-// Contact form handling
-const contactForm = document.getElementById('contactForm');
-
-contactForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-    
-    // Add your form submission logic here
-    // For example: sending data to a server
-    
-    alert('Message sent successfully!');
-    contactForm.reset();
-});
-
 function downloadResume() {
     fetch('SulaimanCV.pdf')
         .then(response => response.blob())
@@ -92,3 +79,4 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+
